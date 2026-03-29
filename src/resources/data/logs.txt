@@ -1,0 +1,24 @@
+[2026-03-28T01:18:31.351] [INFO ] [rabbitmq-client ] Connect callback has been executed (1) times. Status being reported (true)
+[2026-03-28T01:18:31.351] [INFO ] [rabbitmq-client ] Successfully connected to rabbitMQ. Status (true)
+[2026-03-28T01:18:32.120] [INFO ] [application     ] Webhook Cloudant database initialized.
+[2026-03-28T01:18:32.220] [INFO ] [application     ] Primary Cloudant database initialized.
+[2026-03-28T01:18:32.220] [INFO ] [application     ] Initializing RMQ Consumers...
+[2026-03-28T01:18:32.282] [INFO ] [application     ] Successfully retrieved resources via database view: 'webhooksByGuid'.
+[2026-03-28T01:18:32.286] [INFO ] [@dap/portal-common-rabbitmq] [subscribe][wdp -> portal-notifications]: Setup routing path from exchange to queue via topic subscription: v1.notifications.#...
+[2026-03-28T01:18:32.288] [INFO ] [server          ] Express server listening on HTTPS port 8452
+[2026-03-28T01:18:32.291] [INFO ] [@dap/portal-common-rabbitmq] [subscribe][wdp -> portal-notifications]: Successfully setup routing path from exchange to queue via topic subscription: v1.notifications.#.
+[2026-03-28T01:20:17.344] [INFO ] [v1-get-notification-list-controller] [tid:ff10dce0-7ec0-430c-990f-41473101c20f] Context filtering. Got context (undefined) and will filter by (cpd)
+[2026-03-28T01:20:17.346] [INFO ] [incoming-request] [tid:ff10dce0-7ec0-430c-990f-41473101c20f] [200] GET /v1/notifications?limit=7&skip=0&context=undefined&bss_account_id=a5d887224f754672bd5e8b5b0a97267d (596 ms)
+[2026-03-28T01:20:26.927] [INFO ] [v1-get-notification-list-controller] [tid:3fa841cc-c826-4e2f-baaa-7d3f51ee4fb1] Context filtering. Got context (undefined) and will filter by (cpd)
+[2026-03-28T01:20:26.928] [INFO ] [incoming-request] [tid:3fa841cc-c826-4e2f-baaa-7d3f51ee4fb1] [200] GET /v1/notifications?limit=7&skip=0&context=undefined&bss_account_id=a5d887224f754672bd5e8b5b0a97267d (63 ms)
+[2026-03-28T01:20:39.201] [INFO ] [incoming-request] [tid:9676130f-07e0-4556-9e50-a5e2539caca3] [200] GET /notifications2/vendors-node_modules_lodash_lodash_js.js.map (18 ms)
+[2026-03-28T01:21:20.607] [INFO ] [incoming-request] [tid:33d5beb2-39c6-405c-aa4c-c4d827a73a59] [200] GET /v1/notifications/settings?api_version=1.1.0 (41257 ms)
+[2026-03-28T01:21:20.607] [INFO ] [incoming-request] [tid:12ff0834-ed02-4ffe-a842-299adb4bf911] [200] GET /notifications2/api/projects/total?type=cpd (41295 ms)
+[2026-03-28T01:21:20.619] [INFO ] [incoming-request] [tid:f9c816c3-9448-4468-bd4f-69c557deb5ef] [200] GET /notifications2/api/notifications/settings (41305 ms)
+[2026-03-28T01:21:20.652] [ERROR] [incoming-request] [tid:5efdac54-7ad8-4850-b1f1-6cf3f1b39199] [403] GET /notifications2/api/proxy?url=https%3A%2F%2Finternal.api.dai.dev.cloud.ibm.com%2Fv1%2Fnotifications%2Fsettings%3Fapi_version%3D1.1.0%26bss_account_id%3Da5d887224f754672bd5e8b5b0a97267d%26context%3Dcpdaas&touch_session=false (30 ms)
+[2026-03-28T01:21:20.664] [ERROR] [incoming-request] [tid:b26c0e3e-4332-4c83-b78b-dc7d2cafedcf] [403] GET /notifications2/api/proxy?url=https%3A%2F%2Finternal.api.dai.dev.cloud.ibm.com%2Fv1%2Fnotifications%3Flast_seen%3D2026-03-28T05%253A20%253A39.308Z%26bss_account_id%3Da5d887224f754672bd5e8b5b0a97267d%26context%3Dcpdaas&touch_session=false (14 ms)
+[2026-03-28T01:21:20.690] [INFO ] [incoming-request] [tid:d8a3403c-b819-4af4-9ead-d049b3c69424] [200] GET /notifications2/notifications.js.map (41403 ms)
+[2026-03-28T01:21:20.692] [INFO ] [v1-get-notification-list-controller] [tid:830840c3-b979-4447-b7ba-b8ecd415cc03] Context filtering. Got context (cpdaas) and will filter by (cpd)
+[2026-03-28T01:21:20.692] [INFO ] [incoming-request] [tid:830840c3-b979-4447-b7ba-b8ecd415cc03] [200] GET /v1/notifications?limit=20&skip=0&bss_account_id=a5d887224f754672bd5e8b5b0a97267d&context=cpdaas (69 ms)
+[2026-03-28T01:21:20.698] [INFO ] [incoming-request] [tid:e045a7f7-001d-4ba7-9f2d-ad0ed5b54502] [200] GET /notifications2/api/notifications?limit=20&skip=0&context=cpdaas (41356 ms)
+[2026-03-28T01:21:20.869] [INFO ] [incoming-request] [tid:b5d445fa-9294-49bf-8dce-9d8db6882b55] [200] GET /notifications2/api/proxy?href=%2Fapi%2Frest%2Flogin-sessions%2FC-385a3d2d-245c-4367-a7aa-2390827d73c2&common_domain=true&touch_session=false (202 ms)
