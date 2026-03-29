@@ -1,10 +1,9 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 
-import * as quotesService from "./QuotesService.js";
+import * as quotesService from "./quotesService.js";
 
-const server = new McpServer({
+export const server = new McpServer({
     name: "Rudra-MCP-Server",
     version: "1.0.0"
 });
@@ -117,6 +116,3 @@ server.registerTool(
         }
     }
 );
-
-const transport = new StdioServerTransport();
-server.connect(transport);
