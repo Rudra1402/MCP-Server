@@ -7,7 +7,6 @@ app.use(express.json());
 
 app.post("/mcp", async (req, res) => {
     try {
-        // @ts-ignore
         const transport = new StreamableHTTPServerTransport({
             sessionIdGenerator: undefined,
             enableJsonResponse: true
@@ -17,7 +16,7 @@ app.post("/mcp", async (req, res) => {
             transport.close();
         });
 
-        await server.connect(transport as any);
+        await server.connect(transport);
         await transport.handleRequest(req, res, req.body);
     } catch (error) {
         console.error("Error handling MCP request:", error);
